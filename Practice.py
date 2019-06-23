@@ -179,3 +179,13 @@ userInput = list(input("Phone Number"))
 for i in userInput:
     print(number[i], end=" ")
 """
+message = input(">")
+words = message.split(" ")
+emojis = {
+    ":)": "smile",
+    ":(": "sad"
+}
+output = ""
+for i in words:
+    output += emojis.get(i, i) + " "
+print(output)
