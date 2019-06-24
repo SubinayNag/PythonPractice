@@ -179,6 +179,8 @@ userInput = list(input("Phone Number"))
 for i in userInput:
     print(number[i], end=" ")
 """
+
+"""
 message = input(">")
 words = message.split(" ")
 emojis = {
@@ -189,3 +191,20 @@ output = ""
 for i in words:
     output += emojis.get(i, i) + " "
 print(output)
+"""
+
+'''
+class Person:
+    
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f"Hi i'm {self.name}")
+
+
+person = Person("Subinay")
+person.talk()
+'''
+
+
