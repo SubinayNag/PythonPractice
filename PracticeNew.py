@@ -1,1 +1,3 @@
-print("Hello2")
+## Raw String
+print(r"c:/hello/number")
+
