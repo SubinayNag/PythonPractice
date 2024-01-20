@@ -4,7 +4,7 @@ pipeline {
     stage('Scan'){
       steps {
         withSonarQubeEnv('sonarqube'){ 
-          sh "sonar-scanner \
+          sh "sonarqube \
   -Dsonar.projectKey=python-validation \
   -Dsonar.sources=. \
   -Dsonar.host.url=http://192.168.153.129:9000 \
