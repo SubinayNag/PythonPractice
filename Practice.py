@@ -1,3 +1,4 @@
+print("test")
 """
 name = input('Please Enter your name')
 color = input('Please Enter your fav color')
