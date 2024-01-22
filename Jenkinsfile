@@ -3,14 +3,10 @@ pipeline {
   stages {
     stage('Scan'){
       steps {
-        step{
-        environment {
-                scannerHome = tool 'sonarqube'
-            }
-        }
+        
         step{
         withSonarQubeEnv('sonarqube'){ 
-          sh '${scannerHome}/bin/sonar-scanner'
+          sh '/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonarqube/bin/sonar-scanner'
         }}
       }
     }
