@@ -3,11 +3,9 @@ pipeline {
   stages {
     stage('Scan'){
       steps {
-        
-        step{
         withSonarQubeEnv('sonarqube'){ 
           sh '/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonarqube/bin/sonar-scanner'
-        }}
+        }
       }
     }
     stage('Quality Gate'){
